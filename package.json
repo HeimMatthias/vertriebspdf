@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mupdf": "^1.26.2",
+    "qr-scanner": "^1.4.2"
+  }
+}
