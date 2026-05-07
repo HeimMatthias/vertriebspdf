@@ -365,7 +365,7 @@
             });
             saveFile(
               typedArrayToBuffer(
-                doc.saveToBuffer("").asUint8Array()
+                doc.saveToBuffer({ incremental: true }).asUint8Array()
               ),
               file.name.replace(/\.pdf$/i, "_" + target + ".pdf"),
               "pdf"
@@ -373,7 +373,7 @@
           });
         } else
           saveFile(
-            typedArrayToBuffer(doc.saveToBuffer("").asUint8Array()),
+            typedArrayToBuffer(doc.saveToBuffer({ incremental: true }).asUint8Array()),
             file.name,
             "pdf"
           );
